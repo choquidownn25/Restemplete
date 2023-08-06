@@ -8,7 +8,7 @@ import com.afc.democertificados.models.DetalleAportantes;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import kong.unirest.HttpResponse;
-import kong.unirest.JsonObjectMapper;
+//import kong.unirest.JsonObjectMapper;
 import kong.unirest.Unirest;
 
 import java.lang.reflect.Type;
@@ -25,18 +25,18 @@ public class PostRestRespClientMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 // Configurar el ObjectMapper de Unirest con Gson
-        Unirest.config().setObjectMapper(new JsonObjectMapper() {
-            private final Gson gson = new Gson();
-
-            public <T> T readValue(String value, Type type) {
-                return gson.fromJson(value, type);
-            }
-
-            @Override
-            public String writeValue(Object value) {
-                return gson.toJson(value);
-            }
-        });
+//        Unirest.config().setObjectMapper(new JsonObjectMapper() {
+//            private final Gson gson = new Gson();
+//
+//            public <T> T readValue(String value, Type type) {
+//                return gson.fromJson(value, type);
+//            }
+//
+//            @Override
+//            public String writeValue(Object value) {
+//                return gson.toJson(value);
+//            }
+//        });
 
         // Configurar el token de portador (bearer token)
         String bearerToken = "3c6e1b8f8dbdc4d883068bdd945f216ab2df9dae83950503ad849d2e720f3a9a48feabf4be8ad76f93a1d33d33ad910fc734fd60963f6aaeb5776fa74aaaf1d0";
@@ -45,7 +45,7 @@ public class PostRestRespClientMain {
         String apiUrl = "https://api.floid.app/cl/afc/detalle_aportantes";
 
         // Cuerpo de la solicitud
-        String requestBody = "{\"id\":\"11111111-1\",\"password\":\"1234\", \"sandbox\":\"true\"}";
+        String requestBody = "{\"id\":\"11111111-1\",\"password\":\"12345\", \"sandbox\":\"true\"}";
 
         // Realizar la solicitud POST con Unirest
         HttpResponse<String> response = Unirest.post(apiUrl)

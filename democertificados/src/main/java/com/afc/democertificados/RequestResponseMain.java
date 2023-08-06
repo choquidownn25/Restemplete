@@ -2,6 +2,7 @@
  * 
  */
 package com.afc.democertificados;
+
 import com.afc.democertificados.models.ByMonth;
 import com.afc.democertificados.models.Datum;
 import com.afc.democertificados.models.DetalleAportantes;
@@ -10,7 +11,6 @@ import kong.unirest.HttpResponse;
 import kong.unirest.Unirest;
 
 import java.io.IOException;
-import java.util.ArrayList;
 /**
  * @author Madre Hermosa
  *

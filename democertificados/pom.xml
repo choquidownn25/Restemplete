@@ -51,18 +51,27 @@
 			<scope>test</scope>
 		</dependency>
 		
+		 <!-- Swagger -->
+		<!-- https://mvnrepository.com/artifact/com.konghq/unirest-java -->
 		<dependency>
-	        <groupId>com.konghq</groupId>
-	        <artifactId>unirest-java</artifactId>
-	        <version>3.11.11</version>
-    	</dependency>
-    
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-java</artifactId>
+			<version>4.0.0-RC2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.konghq/unirest-objectmapper-jackson -->
 		<dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-		
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-objectmapper-jackson</artifactId>
+			<version>4.0.0-RC13</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.konghq/unirest-objectmapper-jackson -->
+		<dependency>
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-objectmapper-jackson</artifactId>
+			<version>3.10.00</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>

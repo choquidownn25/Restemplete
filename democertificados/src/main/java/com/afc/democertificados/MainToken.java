@@ -31,7 +31,7 @@ public class MainToken {
 		  // Datos de la solicitud POST
         String requestUrl = "https://api.floid.app/cl/afc/detalle_aportantes";
         String bearerToken  = "3c6e1b8f8dbdc4d883068bdd945f216ab2df9dae83950503ad849d2e720f3a9a48feabf4be8ad76f93a1d33d33ad910fc734fd60963f6aaeb5776fa74aaaf1d0";
-        String requestBody = "{\"id\": \"11111111-1\", \"password\": \"1234\", \"sandbox\": \"true\"}";
+        String requestBody = "{\"id\": \"11111111-1\", \"password\": \"12345\", \"sandbox\": \"true\"}";
 
         try {
             // Crear la conexión HTTP
